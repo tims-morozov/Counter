@@ -11,12 +11,15 @@
     <div class="form">
         <button class="add-counter">+</button>
         <ul>
-            <li>
+            <!-- <li> 
                 <img class="logo-animation" src="img/ezgif.com-gif-maker.gif" alt="">
+            </li> -->
+            <li>
+                <img class="logo-form" src="img/logo-form.png" alt="">
             </li>
-            <li class="past-input">
+            <li class="past-input" >
                 <p>Введите прошлые показания</p>
-                <input class="past" type="number" placeholder="м³">  
+                <input class="past" type="number" id="past1" placeholder="м³">  
             </li>    
             <li class="current-input">
                 <p>Введите текущие показания</p>
@@ -27,11 +30,10 @@
                 <input class="rate" type="number" placeholder="руб.">
             </li>
             <li class="button-input">
-                <button class="button">Enter</button>
+                <button class="button" onclick="countRes()">Enter</button>
             </li>
             <li class="result-input">
-                <p>Результат</p>
-                <input class="result" type="text" placeholder="Итог"><br>
+                <h1> <output class="result" id="result"></output> </h1>
             </li>
         </ul>
     </div>
