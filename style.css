@@ -24,6 +24,7 @@ body {
 }
 
 .add-counter:hover {
+    font-size: 40px;
     cursor: pointer;
 }
 
@@ -33,12 +34,6 @@ body {
     margin-top: 50px;
     margin-bottom: 20px;
 }
-
-/* .logo-animation {
-    width: 87px;
-    height: auto;
-    margin-top: 85px;
-} */
 
 ul {
     list-style: none;
@@ -54,7 +49,7 @@ ul {
     color: #71788D;
 }
 
-.past, .current, .rate { /*Инпуты*/
+input { /*Инпуты*/
     width: 350px;
     height: 45px;
     background-color: #f9f9f9;
@@ -63,17 +58,23 @@ ul {
     border-radius: 8px;
 }
 
+input:focus{ /*Исправить при нажатии*/ 
+    border: 3px solid blue; 
+}
+
 .button {
     width: 100px;
     height: 45px;
     margin-top: 32px;
+    margin-bottom: 32px;
     font-size: 16px;
     line-height: 20px;
     color: #FF8200;
     background-color: #f9f9f9;
     border: solid #FF8200;
-    border-width: 3px;
-    border-radius: 50px;
+    border-width: 2px;
+    border-radius: 30px;
+    
 }
 
 .button:hover {
@@ -82,7 +83,7 @@ ul {
     cursor: pointer;
 }
 
-.result-input {
+/* .result-input {
     margin-top: 120px;
     line-height: 40px;
-}
+} */
